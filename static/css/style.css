@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 100px;
+    /* Tambahkan padding untuk menghindari pemotongan bagian atas */
+    background-color: #002060;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* Mengizinkan scroll pada body */
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 200px;
+    background-color: #002060;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+    /* Enable vertical scrolling */
+    height: 80vh;
+    /* Full viewport height */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    text-align: center;
+    background-color: #1f4e79;
+    padding: 20px;
+    margin: 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.reset-section {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.reset-section button {
+    background-color: #ffc000;
+    color: black;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.placeholder-card {
+    background-color: #1f4e79;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.placeholder-card p {
+    margin: 0;
+    color: white;
+}
+
+.right-section {
+    width: 68%;
+    padding: 10px;
+    background-color: #1f4e79;
+    border-radius: 8px;
+}
+
+.right-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.rekap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.rekap .card,
+.details .card {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.rekap .card p,
+.details .card p {
+    font-size: 2em;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details .card {
+    width: 23%;
+}
+
+a {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navigation button {
+    width: 150px;
+    /* Menyesuaikan lebar tombol */
+}
+
+.reset-section button {
+    width: 95%;
+}
+
+.placeholder-card {
+    height: 180px;
+    /* Menyesuaikan tinggi placeholder */
+}
+
+.left-section,
+.right-section {
+    margin-top: 10px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+/* Tambahkan ini di bagian bawah file CSS yang sudah ada */
+.update-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1f4e79;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.update-form .form-group {
+    margin-bottom: 20px;
+}
+
+.update-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.update-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.update-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.update-form button:hover {
+    background-color: #0056b3;
+}
+
+.update-form a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.update-form a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Data Transaksi Penjualan Amonia</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Data Transaksi Penjualan Amonia</h1>
+        </div>
+        <div class="navigation">
+            <button>Refresh ERDKK</button>
+            <button>Refresh Salur</button>
+            <button>Convert ke PDF</button>
+            <button>Hapus ERDKK</button>
+            <button>Hapus Salur</button>
+        </div>
+        <div class="reset-section">
+            <button>RESET KATEGORI</button>
+        </div>
+        <div class="content">
+            <div class="left-section">
+                <div class="placeholder-card">
+                    <p>This shape represents a table slicer. Table slicers are not supported in this version of Excel.
+                    </p>
+                </div>
+                <div class="placeholder-card">
+                    <p>This shape represents a table slicer. Table slicers are not supported in this version of Excel.
+                    </p>
+                </div>
+                <div class="placeholder-card">
+                    <p>This shape represents a table slicer. Table slicers are not supported in this version of Excel.
+                    </p>
+                </div>
+            </div>
+            <div class="right-section">
+                <h2>REKAP PERHITUNGAN</h2>
+                <div class="rekap">
+                    <div class="card">
+                        <h3>Jumlah Alokasi ERDKK Amonia</h3>
+                        <p>{{ dashboard['erdkk_urea'] }}</p>
+                    </div>
+                    <div class="card">
+                        <h3>Jumlah Alokasi ERDKK NPK Amonia</h3>
+                        <p>{{ dashboard['erdkk_npk_phonska'] }}</p>
+                    </div>
+                    <div class="card">
+                        <h3>Jumlah Petani</h3>
+                        <p>{{ dashboard['jumlah_petani'] }}</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="card">
+                        <h3>Salur Amonia</h3>
+                        <p>{{ dashboard['salur_urea'] }}</p>
+                    </div>
+                    <div class="card">
+                        <h3>Salur Amonia</h3>
+                        <p>{{ dashboard['salur_phonska'] }}</p>
+                    </div>
+                    <div class="card">
+                        <h3>Prosentase Serapan Urea</h3>
+                        <p>{{ dashboard['serapan_urea'] }}%</p>
+                    </div>
+                    <div class="card">
+                        <h3>Prosentase Serapan NPK Phonska</h3>
+                        <p>{{ dashboard['serapan_npk_phonska'] }}%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="{{ url_for('update') }}">Update Data</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Update Transaksi Penjualan Amonia</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align:center">Update Transaksi Penjualan Amonia</h1>
+        <form action="{{ url_for('update') }}" method="post" class="update-form">
+            <div class="form-group">
+                <label for="erdkk_urea">Jumlah Alokasi ERDKK Amonia:</label>
+                <input type="number" id="erdkk_urea" name="erdkk_urea" required>
+            </div>
+            <div class="form-group">
+                <label for="erdkk_npk_phonska">Jumlah Alokasi ERDKK NPK Amonia:</label>
+                <input type="number" id="erdkk_npk_phonska" name="erdkk_npk_phonska" required>
+            </div>
+            <div class="form-group">
+                <label for="salur_urea">Salur Amonia:</label>
+                <input type="number" id="salur_urea" name="salur_urea" required>
+            </div>
+            <div class="form-group">
+                <label for="salur_phonska">Salur Amonia:</label>
+                <input type="number" id="salur_phonska" name="salur_phonska" required>
+            </div>
+            <div class="form-group">
+                <label for="jumlah_petani">Jumlah Petani:</label>
+                <input type="number" id="jumlah_petani" name="jumlah_petani" required>
+            </div>
+            <div class="form-group">
+                <label for="serapan_urea">Prosentase Serapan Amonia:</label>
+                <input type="number" id="serapan_urea" name="serapan_urea" required>
+            </div>
+            <div class="form-group">
+                <label for="serapan_npk_phonska">Prosentase Serapan NPK Amonia:</label>
+                <input type="number" id="serapan_npk_phonska" name="serapan_npk_phonska" required>
+            </div>
+            <button type="submit">Update</button>
+        </form>
+        <a href="{{ url_for('index') }}">Back to Dashboard</a>
+    </div>
+</body>
+
+</html>
